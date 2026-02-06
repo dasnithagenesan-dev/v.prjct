@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be My Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- GOOGLE FORM (HIDDEN) -->
+<form id="responseForm"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfvZxB9YJDUGqr5VK02uwS7kpn-qHJW2BlhEPl2steIz7UxEA/formResponse"
+      method="POST"
+      target="hidden_iframe">
+
+    <input type="hidden" name="entry.1606225042" id="formName">
+    <input type="hidden" name="entry.573433707" id="formAnswer">
+</form>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+<!-- PAGE 1 -->
+<div class="container" id="page1">
+    <img src="teddy.png" class="cute-img">
+    <h1>Hi 💕</h1>
+    <p>What's your name?</p>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="goNext()">Next 💌</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="container hidden" id="page2">
+    <img src="please.jpg" class="cute-img">
+    <h1 id="question"></h1>
+
+    <div class="buttons">
+        <button id="yesBtn" onclick="sayYes()">Of course 💖</button>
+        <button id="noBtn" onclick="sayNo()">No 😒</button>
+    </div>
+</div>
+
+<!-- POPUP -->
+<div class="popup hidden" id="popup">
+    <img src="bouque.jpg" class="cute-img">
+    <h2>Haha 😌💖</h2>
+    <p>
+        I knew you would become my Valentine!  
+        <br>Happy Valentine’s Day 💘
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
